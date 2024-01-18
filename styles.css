@@ -4,6 +4,7 @@
     --cinza: #9A9A9A;
     --cinza-barra: #D9D9D9;
     --cinza-claro: #E7E7E7;
+    --branco: #ffffff;
     --azul: #384C7C;
     --amarelo: #CBB155;
     --preto: #000000;
@@ -40,11 +41,16 @@ body {
 
 }
 
+/* imagem de perfil */
+
 .card__imagem {
     border: 0.5px var(--cinza-barra);
     height: 150px;
     border-radius: 100000px;
 }
+
+/* descricao */
+
 .card__nome{
     color: var(--amarelo-escuro);
     font-weight: 700;
@@ -67,6 +73,8 @@ body {
     color: var(--azul);
     font-weight: 600;
 } 
+
+/* parte deireita do card topo */
 
 .card-direita {
     display: flex;
@@ -119,5 +127,55 @@ body {
 .barra-de-progresso__container {
     display: flex;
     justify-content: space-between;
-       
 }
+
+/* botoes */
+
+.card-botoes {
+    padding-top: 0.5em;
+    display: flex;
+    width: 100%;
+}
+
+.card-botoes__container {
+    display: flex;
+    align-items: center;
+    width: 85%;
+}
+
+.card-buttons__botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--branco);
+    text-decoration: none;
+    color: var(--amarelo);
+    border: 2px solid var(--amarelo);
+    border-radius: 5px;
+    width: 100%;
+    margin-right: 8px;
+}
+
+.card-botoes__cheio {
+    padding: 1em;
+    width: 15%;
+    background-color: var(--amarelo);
+    border-radius: 5px;
+}
+.car-buttons__botao__cheio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5em;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.card-botoes__icon {
+    width: 24px;
+}
+
+
+
