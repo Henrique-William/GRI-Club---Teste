@@ -1,0 +1,123 @@
+:root {
+    --fonte: 'Roboto';
+    --amarelo-escuro: #C3B488;
+    --cinza: #9A9A9A;
+    --cinza-barra: #D9D9D9;
+    --cinza-claro: #E7E7E7;
+    --azul: #384C7C;
+    --amarelo: #CBB155;
+    --preto: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(108, 107, 109);
+    padding: 40vh 25vw;
+    font-family: var(--fonte);
+    color: var(--preto);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.card {
+    background-color: white;
+    width: 50vw;
+    height: auto;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+.card-container {
+    display: flex;
+    padding-bottom: 1em;
+    gap: 1em;
+    height: 50%;
+
+}
+
+.card__imagem {
+    border: 0.5px var(--cinza-barra);
+    height: 150px;
+    border-radius: 100000px;
+}
+.card__nome{
+    color: var(--amarelo-escuro);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.card__subtitulo {
+    color: var(--cinza);
+}
+
+.card__divisor {
+    width: 50%;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__markets {
+    color: var(--azul);
+    font-weight: 600;
+} 
+
+.card-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    padding-top: 1em;
+    gap: 1em;
+}
+
+.card-direita__img {
+    width: 100px;
+}
+
+.card-direita__fav {
+    width: 25px;
+    margin-left: auto;
+}
+
+
+/* parte de baico do card */
+
+
+.barra-de-progresso {
+    width: 85%;
+}
+
+.barra-de-progresso .barra-de-progesso__caixa{
+    width: 100%;
+    background-color: var(--cinza-claro);
+    height: 10px;
+    border: 0.5px solid var(--cinza-barra);
+    border-radius: 20px;
+}
+
+.barra-de-progresso .barra-de-progesso__caixa .barra-de-progesso__linha {
+    height: 10px;
+    border-radius: 20px;
+    background-color: var(--azul);
+}
+
+.barra-de-progesso__linha {
+    width: 36%;
+}
+
+.barra-de-progesso__porcentagem {
+    font-weight: 700;
+}
+
+.barra-de-progresso__container {
+    display: flex;
+    justify-content: space-between;
+       
+}
