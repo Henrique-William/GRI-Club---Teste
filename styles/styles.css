@@ -1,3 +1,5 @@
+@import url('./respo.css');
+
 :root {
     --fonte: 'Roboto';
     --amarelo-escuro: #C3B488;
@@ -92,11 +94,10 @@ body {
 .card-direita__fav {
     width: 25px;
     margin-left: auto;
+    border: none;
 }
 
-
 /* parte de baico do card */
-
 
 .barra-de-progresso {
     width: 85%;
@@ -201,22 +202,30 @@ body {
   }
 
 @media screen and (max-width: 1024px){
-    .card {
-        width: 70vw;
-    }
     body {
-        padding: 40vh 15vw;
+        font-size: 10px;
+    }
+
+    .card__imagem {
+        border: 0.5px var(--cinza-barra);
+        height: 70px;
+    }
+    
+    .card {
+        width: 50vw;
+    }
+    .card-botoes__icon {
+        width: 15px;
     }
 }
 
 @media screen and (max-width: 700px){
     body{
         font-size: 6px;
-        padding: 40vh 20vw;
     } 
 
     .card {
-        width: 55vw;
+        width: 50vw;
     }
 
     .card__imagem {
@@ -248,6 +257,6 @@ body {
     }
     
     .card-botoes__icon {
-        width: 12px;
+        width: 10px;
     }
 }
