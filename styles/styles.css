@@ -135,6 +135,7 @@ body {
     padding-top: 0.5em;
     display: flex;
     width: 100%;
+    font-weight: 600;
 }
 
 .card-botoes__container {
@@ -157,12 +158,6 @@ body {
     margin-right: 8px;
 }
 
-.card-botoes__cheio {
-    padding: 1em;
-    width: 15%;
-    background-color: var(--amarelo);
-    border-radius: 5px;
-}
 .car-buttons__botao__cheio {
     display: flex;
     justify-content: center;
@@ -171,11 +166,88 @@ body {
     gap: 0.5em;
     text-decoration: none;
     color: var(--branco);
+
+    padding: 0.8em;
+    width: 15%;
+    background-color: var(--amarelo);
+    border-radius: 5px;
+    border: 2px solid var(--amarelo);
 }
 
 .card-botoes__icon {
     width: 24px;
 }
 
+/* hover botoes */
 
+.card-buttons__botoes:hover {
+    background-color: var(--amarelo);
+    color: var(--branco);
+    transition: 0.5s;
+}
 
+.car-buttons__botao__cheio:hover{
+    color: var(--amarelo);
+    transition: 0.5s;
+    background-color: var(--branco);
+    cursor: pointer;
+    border: 2px solid var(--amarelo);
+}
+
+.card-botoes__icon.animate-out {
+    transform: scale(0.8);
+    filter: brightness(100%);
+    transition: transform 0.5s, filter 0.5s;
+  }
+
+@media screen and (max-width: 1024px){
+    .card {
+        width: 70vw;
+    }
+    body {
+        padding: 40vh 15vw;
+    }
+}
+
+@media screen and (max-width: 700px){
+    body{
+        font-size: 6px;
+        padding: 40vh 20vw;
+    } 
+
+    .card {
+        width: 55vw;
+    }
+
+    .card__imagem {
+        border: 0.5px var(--cinza-barra);
+        height: 60px;
+    }
+
+    .card__nome{
+        color: var(--amarelo-escuro);
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .card-direita__img {
+        width: 50px;
+    }
+    
+    .card-direita__fav {
+        width: 12px;
+        margin-left: auto;
+    }
+
+    .barra-de-progresso .barra-de-progesso__caixa{
+        height: 5px;
+    }
+
+    .barra-de-progresso .barra-de-progesso__caixa .barra-de-progesso__linha {
+        height: 5px;
+    }
+    
+    .card-botoes__icon {
+        width: 12px;
+    }
+}
